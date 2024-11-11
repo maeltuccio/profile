@@ -1,0 +1,73 @@
+body {
+  background-color:#F6F9FC;
+  font-family: "Noto Serif", serif;
+  color : #402c00;
+  font-size: 14px ;
+  line-height: 20px;
+}
+h1, h2, h3 {
+  color : #00699ee9;
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  line-height: 22px;
+}
+a{
+  color : #233142;
+  text-decoration: none ;
+}
+a:hover{
+  color:#0099E7;
+  transition: all 0.3s ease;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 220px;
+  ;
+}
+.container{
+  width: 500px;   /* Définit la largeur */
+  margin: 0 auto;
+}
+.card{
+margin: 20px;
+background-color: white;
+padding : 60px;
+box-shadow: 0 0px 25px rgba(211, 211, 211, 1);
+border-radius: 13px;
+text-align: center;
+width: 450px;
+border: 1px lightgrey;
+}
+
+.list-inline {
+  list-style: none;        /* Retirer les puces de la liste */
+  padding-left: 0px;       /* Retirer le padding à gauche */
+  margin: 0;               /* Retirer toute marge */
+}
+.list-inline > li {
+  display: inline-block;   /* Afficher les éléments <li> sur une même ligne */
+  padding: 0 20px;         /* Ajouter un espacement horizontal entre les éléments */
+  line-height: 1.5;        /* Ajuster la hauteur de ligne */
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
