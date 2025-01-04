@@ -1,56 +1,239 @@
+
 body {
-  background-color:#F6F9FC;
-  font-family: "Noto Serif", serif;
-  color : #402c00;
+  background-image: linear-gradient(to bottom right, rgba(101, 84, 84, 0), rgb(199, 191, 191));
+  background-color:#ced4da;
+  font-family: "Arimo", serif;
   font-size: 14px ;
   line-height: 20px;
 }
+.container {
+  margin: 20px;
+  box-shadow: 0 0 12px rgb(0 0 0 / 19%);
+  border-radius: 6px;
+  background: radial-gradient(circle at 20% 30%, #999999, transparent 20%),
+              radial-gradient(circle at 80% 70%, #5b5b5b, transparent 25%),
+              radial-gradient(circle at 50% 50%, #6c6c6c, transparent 30%),
+              radial-gradient(circle at 40% 80%, #989898, transparent 20%);
+  background-size: 300% 300%;
+  height: 100%;
+  border: 1px solid black;
+  position: relative;
+  z-index: 0;
+  animation: lava-lamp-animation 20s ease-in-out infinite;
+}
+
+/* Animation Keyframes */
+@keyframes lava-lamp-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 25% 75%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  75% {
+    background-position: 75% 25%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
 h1, h2, h3 {
-  color : #00699ee9;
-  font-family: "Merriweather", serif;
-  font-size: 22px;
-  line-height: 22px;
+  color: #000000e9;
+  font-family: "Arimo", sans-serif;
+  font-size: 35px;
+  line-height: 19px;
+  font-weight: 100;
 }
-a{
-  color : #233142;
-  text-decoration: none ;
+.subtitle {
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: bold;
 }
-a:hover{
-  color:#0099E7;
-  transition: all 0.3s ease;
+.italize{
+  font-style: italic;
+  font-size: 15px;
+}
+.name-block{
+  width: 100%;
+}
+.about-block{
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.about-title {
+  width: 1000px;
+  font-size: large;
+  font-weight: bolder;
+  font-size: 50px;
 }
 
-.img-circle {
-  border-radius: 50%;
-  width: 220px;
-  ;
+.text{
+  align-self: flex-end;
 }
-.container{
-  width: 500px;   /* Définit la largeur */
+.project-img{
+  display:flex;
+  border-block: 1px solid black;
+  height: 241px;
+
+}
+.project-text{
+  display:flex;
+  border-bottom: 1px solid black;
+  height:200px;
+
+}
+.project-card {
+  flex: 1;
+  border-right: 1px solid black;
+}
+.project-card img {
+  max-width: 80%;
+  height: 176px;
+  display: block;
   margin: 0 auto;
-}
-.card{
-margin: 20px;
-background-color: white;
-padding : 60px;
-box-shadow: 0 0px 25px rgba(211, 211, 211, 1);
-border-radius: 13px;
-text-align: center;
-width: 450px;
-border: 1px lightgrey;
+  margin-block: 37px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
-.list-inline {
-  list-style: none;        /* Retirer les puces de la liste */
-  padding-left: 0px;       /* Retirer le padding à gauche */
-  margin: 0;               /* Retirer toute marge */
-}
-.list-inline > li {
-  display: inline-block;   /* Afficher les éléments <li> sur une même ligne */
-  padding: 0 20px;         /* Ajouter un espacement horizontal entre les éléments */
-  line-height: 1.5;        /* Ajuster la hauteur de ligne */
+.project-card:hover img {
+  transform: translateY(-10px); /* Déplacement de l'image vers le haut */
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3); /* Ombre encore plus forte lors du survol */
 }
 
+.project-card:last-child {
+  border-right: none; /* Supprime la bordure de la dernière carte */
+}
+.padding-block {
+  padding: 50px;
+  margin-bottom: 96px;
+}
+.centered{
+  text-align: center;
+}
+.vertical-title{
+  writing-mode: vertical-rl; /* Oriente le texte verticalement de droite à gauche */
+  transform: rotate(180deg); /* Inverse le sens si tu veux une orientation naturelle (optionnel) */
+  margin: 0;
+}
+
+.skills {
+  width: 200px;
+  height: 200px;
+  margin-left: 21px;
+  margin-top: -36px;
+}
+
+.inside-text{
+  padding:20px;
+}
+.skills-block {
+  height: 107px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  padding-top: 60px;
+  padding-right: 113px;
+}
+.skill-btn {
+  width: 116px;
+  height: 52px;
+  background-color: #C9C6C8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 24px;
+  flex-wrap: nowrap;
+  margin-inline: 3px;
+  padding-inline: 21px;
+  transition: 0.5s ease;
+}
+.skill-btn.gh-btn {
+  position: relative;
+  top: -13px;
+  height: 40px;
+  border-radius: 6px;
+  width: 283px;
+}
+.skill-btn:hover{
+  background-color:#000000;
+  width: 300px;
+  color: white;
+}
+.skill-btn:hover h2 {
+  color: white; /* Changer la couleur du texte en blanc au survol */
+}
+
+.skill-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px; /* Ajustement de la taille du texte */
+  margin: 0; /* Retirer la marge par défaut de <h2> */
+  text-align: center; /* S'assurer que le texte est bien centré */
+  font-weight: normal; /* Poids de police normal pour un aspect plus doux */
+}
+/* .skill-group{
+  margin-block:20px;
+} */
+.projects-background {
+  position: absolute;
+  top: -112px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 124px;
+  color: rgb(0 0 0 / 93%);
+  z-index: -1;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.projects-section {
+  position: relative; /* Nécessaire pour que l'enfant "projects-background" utilise position: absolute */
+}
+.horizon-line {
+  width: 1383px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  left: 0px;
+}
+.vertical-line{
+  width:1px;
+  height:1000px;
+  background-color: black;
+  position: absolute;
+  z-index: -1;
+}
+
+audio {
+  max-width: 600px;
+  margin: 5px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  background-color: #f3f3f3;
+  height: 40px;
+  width: 105px;
+}
+
+.arrow {
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  left: 170px;
+  transform: scaleX(-1) rotate(105deg) translate(-22px, -3px);
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #6f6f6f;
+  border-radius: 50%;
+}
 @media (max-width: 960px) {
   /* Pour un écran < 960px, cette classe CSS s'applique */
   .container {
