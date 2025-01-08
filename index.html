@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
   <link rel="icon" href="images/icons8-star-16.png" type="image/png">
   <title>MaëlTuccio </title>
@@ -17,21 +18,21 @@
 
 <body>
 <div class="container">
+  <div class="scrollable-content">
   <div class="padding-block">
   <div class="name-block">
-  <h1 class="about-title">Maël TUCCIO</h1>
-  <p class="subtitle">Web Developer | Sales expert</p>
+  <h1 class="about-title" data-aos="fade-down">Maël TUCCIO
+  </h1>
+  <p class="subtitle" data-aos="fade-right">Web Developer | Sales expert</p>
  <!-- <div class="vertical-line"></div> -->
   <div class="text-border">
-  <p class="italize">
-    Driven by a passion for sales and a newfound love for technology, I have spent the past 10 years managing key client portfolios and driving growth strategies in various sectors, particularly in food tech. Recently, I completed an intensive web development program at Le Wagon, where I honed my skills in full-stack development, bridging the gap between commerce and technology.
-    I specialize in helping businesses optimize their sales strategies and bring projects to life through innovative web development solutions. My journey is enriched by a background in literature, which fuels my creativity, and a commitment to impactful projects addressing societal and environmental challenges.
-    Now, I am eager to embark on new adventures and collaborate with like-minded professionals who share my vision of creating innovative solutions for a better future.
+  <p class="italize" data-aos="fade-up">
+    With 10 years of experience in sales and a passion for technology, I specialize in optimizing business strategies and creating innovative web solutions. After completing an intensive full-stack development program at Le Wagon, I bridge the gap between commerce and technology to bring impactful projects to life. Driven by creativity rooted in literature and a strong commitment to social and environmental initiatives, I am determined to contribute to innovative, high-value projects.
   </p>
-  <p class="italize">*Listen to my story*</p>
+  <p class="italize" data-aos="zoom-in-up">*Listen to my story*</p>
   <img class="arrow" src="images/arrow.png" alt="My story">
-   <audio controls>
-    <source src="audio/smoke.mp3" type="audio/mp3">
+   <audio controls data-aos="zoom-in-up">
+    <source src="audio/Présentation Maël.mp3" type="audio/mp3">
     Ton navigateur ne prend pas en charge la balise audio.
   </audio>
   <!-- <div class="horizon-line"></div> -->
@@ -42,56 +43,72 @@
   <h2 class="projects-background">PROJECTS</h2>
 <div class="project-img">
 <div class="project-card">
-  <img src="images/artbnb.png" alt="">
+  <img data-aos="flip-left" data-aos-duration="2000" src= "images/SecondSpin.png" class="clickable-image" alt="SecondSpinRecords">
 </div>
 <div class="project-card">
-  <img src="images/SecondSpin.png" alt="">
+  <img  data-aos="flip-right" data-aos-duration="2000" src="images/artbnb.png" class="clickable-image"alt="ArtBNB">
 </div>
+<!-- <div class="project-card">
+  <img src="images/landing_page.png" class="clickable-image"alt="Landing-page">
+</div> -->
 <div class="project-card">
-  <img src="images/landing_page.png" alt="">
-</div>
-<div class="project-card">
-  <img src="https://images.unsplash.com/photo-1533134663120-ec7e68d56494?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+  <img data-aos="flip-left" data-aos-duration="2000" src="images/zip.png"class="clickable-image" alt="projet ZIP">
 </div>
 </div>
 </div>
 <div class="project-text">
 <div class="project-card">
   <div class="inside-text">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit blanditiis debitis eveniet corrupti tenetur obcaecati dolores cumque, facilis dolorem aut, vitae asperiores voluptate, illo quibusdam sapiente ratione odit porro dicta.
-    <div class="skill-btn gh-btn">
-      <h2 class="skill-text">GitHub</h2>
+    <p class="subtitle" data-aos="zoom-in">SECOND SPIN RECORDS</p>
+  <p>A web app for sharing, listening to, and selling vinyl records. It uses a powerful API to instantly fetch vinyl details, artwork, and audio for easy sharing. Real-time chat enables users to interact and manage purchases and sales. The integrated Turbo dashboard allows seamless management of all interfaces on a single page.
+    <p>---------------------------------------</p>
+    <strong> Ruby on rails, JavaScript, SCSS, PostgreSQL, Turbo.</strong>
+  </p>
+  <div class="skill-btn gh-btn">
+    <a class="skill-text" href="https://github.com/maeltuccio/Second_Spin_Records">
+      <h2 class="skill-text"> GitHub</h2>
+    </a>
+  </div>
+</div>
+</div>
+<div class="project-card">
+  <div class="inside-text">
+  <p class="subtitle"data-aos="zoom-in">ARTBNB</p>
+  <p>A web app for renting and listing artworks. Users can rent or offer their artwork for rent, with an integrated booking and reservation management system through a personalized interface.
+    <p class="space-me-bnb">---------------------------------------</p>
+    <strong> Ruby on Rails, JavaScript, SCSS, PostgreSQL, Bootstrap.</strong>
+    <div class="skill-btn gh-btn " id="btn-2">
+      <a class="skill-text"href="https://github.com/maeltuccio/Artbnb">
+       <h2 class="skill-text"> GitHub</h2>
+      </a>
     </div>
   </p>
 </div>
 </div>
 <div class="project-card">
   <div class="inside-text">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem fuga accusamus beatae qui a, nihil molestiae iste, quod omnis quas similique tempora dicta neque perferendis asperiores. Nihil culpa repudiandae nemo?
-    <div class="skill-btn gh-btn">
-      <h2 class="skill-text">GitHub</h2>
-    </div>
-  </p>
+    <p class="subtitle"data-aos="zoom-in">ZIP CLOTHING </p>
+  <p> A second-hand clothing marketplace built on WordPress, enabling users to easily buy and sell pre-loved items. With a sleek interface and seamless WooCommerce integration, the platform offers smooth payment and product management experiences.
+    <p class="space-me-zip">---------------------------------------</p>
+  <strong> WordPress, WooCommerce.</strong>
+  <div class="skill-btn gh-btn" id="btn-2">
+    <a href="https://zip-clothing.com/" class="skill-text">
+    <h2 class="skill-text"> GitHub</h2>
+    </a>
+  </div>
+</p>
 </div>
 </div>
-<div class="project-card">
-  <div class="inside-text">
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit at aspernatur, exercitationem labore rem unde recusandae laboriosam blanditiis cupiditate sed aut, eos temporibus amet odio sequi velit consequuntur provident modi.
-    <div class="skill-btn gh-btn">
-      <h2 class="skill-text">GitHub</h2>
-    </div>
-  </p>
-</div>
-</div>
-<div class="project-card">
+<!-- <div class="project-card">
   <div class="inside-text">
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores tempore vero repudiandae autem rerum dolor earum aperiam dolorum temporibus? Animi eveniet blanditiis omnis, nihil suscipit sint ducimus error illo libero? </p>
 </div>
+</div> -->
 </div>
-</div>
+<!-- Compétences techniques  -->
 <div class="skills-block">
   <div class="skills">
-  <h1 class="vertical-title">SKILLS</h1>
+  <h1 class="vertical-title"> TECH <br>SKILLS</h1>
 </div>
 <div class="skills-group"></div>
 <div class="skill-btn">
@@ -101,7 +118,7 @@
   <h2 class="skill-text">HTML</h2>
 </div>
 <div class="skill-btn">
-  <h2 class="skill-text">CSS</h2>
+  <h2 class="skill-text">SCSS</h2>
 </div>
 <div class="skill-btn">
   <h2 class="skill-text">JavaScript</h2>
@@ -131,9 +148,74 @@
   <h2 class="skill-text">Payment Integration</h2>
 </div>
 </div>
-<h2 class="centered">CONTACT</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit saepe asperiores ratione eum temporibus adipisci nisi architecto cupiditate eos. Nostrum eum, quam ratione ab facilis soluta nisi doloribus ipsum veniam?</p>
 
+<!-- Compétences sales -->
+
+<div class="skills-block">
+<div class="skills-group"></div>
+<div class="skill-btn">
+  <h2 class="skill-text">Sales Leadership</h2>
 </div>
+<div class="skill-btn">
+  <h2 class="skill-text">Team management</h2>
+</div>
+<div class="skill-btn">
+  <h2 class="skill-text">Lead Generation</h2>
+</div>
+<div class="skill-btn">
+  <h2 class="skill-text">Brand Representation</h2>
+</div>
+<div class="skill-btn">
+  <h2 class="skill-text">Client Portfolio Management (€4M)</h2>
+</div>
+<div class="skill-btn">
+  <h2 class="skill-text">Revenue Growth</h2>
+</div>
+<div class="skill-btn">
+  <h2 class="skill-text">Partnerships Development</h2>
+</div>
+<div class="skill-btn">
+  <h2 class="skill-text">Market knowledge</h2>
+</div>
+<div class="skill-btn">
+  <h2 class="skill-text">Strategic Planning</h2>
+</div>
+
+  <div class="skills">
+    <h1 class="vertical-title-right">SALES <br>SKILLS</h1>
+  </div>
+</div>
+<div class="contact-block">
+  <img src="images/maeltuccio2.png" class="profile-pic" alt="maeltuccio">
+  <h2 class="centered">CONTACT</h2>
+  <!-- Form -->
+  <div class="form-container">
+    <form action="https://formspree.io/f/xwppwzwo" method="POST">
+      <label>
+        <p class="subtitle">EMAIL</p>
+        <input type="email" name="email">
+      </label>
+      <label>
+        <p class="subtitle">MESSAGE</p>
+        <textarea name="message"></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <div class="contact-me">
+  <h2 class="subtitle">Email</h2>
+  <p>maeltuccio@gmail.com</p>
+<h2 class="subtitle">Phone</h2>
+  <p>+33627432569</p>
+</div>
+  </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+  AOS.init({
+    duration: 1200, // Durée en millisecondes
+  });
+</script>
 </body>
 </html>
