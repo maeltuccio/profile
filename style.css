@@ -21,7 +21,7 @@ body {
   position: relative;
   z-index: 0;
   animation: lava-lamp-animation 10s ease-in-out infinite;
-   overflow: hidden; 
+   overflow: hidden;
   display:flex;
 
 }
@@ -30,12 +30,12 @@ body {
 }
 
 .scrollable-content {
-  height: 100%; /* Prend toute la hauteur du conteneur */
-  width: 100%; /* Assure une largeur complète du texte */
-  overflow-y: scroll; /* Active le défilement vertical */
-  position: absolute; /* Positionne le contenu de manière indépendante */
-  top: 0; /* Aligne le texte en haut du conteneur */
-  left: 0; /* Aligne le texte à gauche du conteneur */
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  left: 0;
 
 }
 
@@ -171,14 +171,14 @@ h1, h2, h3 {
   left: 45px;
 }
 .vertical-title{
-  writing-mode: vertical-rl; /* Oriente le texte verticalement de droite à gauche */
+  writing-mode: vertical-rl;
   transform: rotate(180deg); /* Inverse le sens si tu veux une orientation naturelle (optionnel) */
   margin: 0;
   line-height: 36px;
   margin-block:-37px;
 }
 .vertical-title-right{
-  writing-mode: vertical-rl; /* Oriente le texte verticalement de droite à gauche */
+  writing-mode: vertical-rl;
   margin: 0;
   line-height: 36px;
   margin-block:8px;
@@ -238,19 +238,17 @@ h1, h2, h3 {
   color: white;
 }
 .skill-btn:hover h2 {
-  color: white; /* Changer la couleur du texte en blanc au survol */
+  color: white;
 }
 
 .skill-text {
   font-family: 'Oswald', sans-serif;
-  font-size: 12px; /* Ajustement de la taille du texte */
-  margin: 0; /* Retirer la marge par défaut de <h2> */
-  text-align: center; /* S'assurer que le texte est bien centré */
-  font-weight: normal; /* Poids de police normal pour un aspect plus doux */
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+  font-weight: normal;
 }
-/* .skill-group{
-  margin-block:20px;
-} */
+
 .projects-background {
   position: absolute;
   top: -112px;
@@ -263,7 +261,7 @@ h1, h2, h3 {
   white-space: nowrap;
 }
 .projects-section {
-  position: relative; /* Nécessaire pour que l'enfant "projects-background" utilise position: absolute */
+  position: relative;
 }
 .horizon-line {
   width: 1383px;
